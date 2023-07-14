@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>use-a-framework</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Use-a-framework</h2>
+        </p>
+        <p class="sub-para">Using a framework or custom-built website offers much more freedom when it comes to optimizing certain processes. In order to offer maximum flexibility, CMS are often much more restrictive and include compulsory resource-sapping features.<br>
+            This is why the CMS Drupal uses the concept of ‘hooks’ for its module system, which requires the functions within modules to follow a specific naming convention. However, testing to see which functions exist is a resource-consuming process, whereas custom-built websites do not need to ‘search’ for these functions as they are already known.
+            <br><br>
+            Avoid this type of implementation whenever possible:<br><br>
+            <pre><code>
+            <?php
+              foreach ($list as $module) {
+                if (function_exists($module . '_' . $hook)) {
+                  // Do some stuff here...
+                }
+            }
+            ?>
+        </code></pre>
+          </p>
+        </div>
+        
+</body>
+</html>

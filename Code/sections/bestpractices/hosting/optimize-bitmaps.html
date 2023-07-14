@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>optimize-bitmaps</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Hosting</span>
+            <h2>optimize-bitmaps</h2>
+        </p>
+        <p class="sub-para">
+            Bitmap images often constitute most of the bytes downloaded, just ahead of the CSS and JavaScript libraries. Optimizing them thus has a considerable impact on the bandwidth consumed. The first step is to choose the correct format between bitmap (e.g. JPEG, PNG & GIF) and vector (SVG).
+Bitmaps should really only be used for photos and interface elements that are not possible though icons or CSS styling. <br>
+The choice of bitmap format depends on the image’s characteristics: black and white or color, color palette, need for transparency, etc. For these characteristics, the ability to use lossy compression on the image is more suited to JPEG and WebP (Google); while the need for transparency and/or lossless compression is more suited to GIF or PNG.
+Tools such as pngcrush, ImageMagick and jpegtran will help you reduce the size of images as much as possible. <br>
+
+Potential saving: At least 25% saved by fine-tuning the color palette and the compression ratio, and up to over 80% compared to a uncompressed bitmap. WebP is on average 30% smaller than JPEG.
+        </p>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>choose-a-design-that-is-simple</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Choose-a-design-that-is-simple</h2>
+        </p>
+        <p class="sub-para">Use the features offered by HTML5 and CSS3 to design a website. It is important that you do not attempt to build a website without first taking into account technical constraints.
+            <br><br>
+            Employ devices such as color shading and rounded corners which can made using CSS3, avoiding the need for images.
+            <pre><code>
+            /* Example of a rounded border */
+            .box_round {
+              -webkit-border-radius: 12px; /* Saf3-4, iOS  1-3.2, Android c1.6 */
+              border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+              /* useful if you don't want a bg color from leaking outside the border: */
+              -moz-background-clip: padding; -webkit-background- clip: padding-box; background-clip: padding-box;
+            }
+            
+            /* Example of a box shadow */
+            .box_shadow {
+              -webkit-box-shadow: Opx Opx 4px Opx #ffffff; /*
+              Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+              box-shadow: Opx Opx 4px Opx #ffffff; /* Opera 1O.5, IE9, FF4+, Chrome 6+, iOS 5 */
+            }
+        </code></pre>
+            Design banners, headers, etc. so that the text, background colors, etc. can be produced using HTML/CSS. For more examples, visit:
+            <a href="http://css3please.com">http://css3please.com</a>
+          </p>
+        </div>
+        
+</body>
+</html>

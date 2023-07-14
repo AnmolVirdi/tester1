@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Split CSS</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Development</span>
+            <h2>Split CSS</h2>
+        </p>
+        <p class="sub-para">
+            Use a group of CSS elements instead of only one, and only call CSS that is useful for the situation. Doing so minimizes the size of the page when it is first loaded, thus saving bandwidth and reducing CPU load.
+<br><br>
+Split CSS by function: - layout - content - module x <br>
+- module y - etc. <br>
+This allows any CSS for unused modules to be excluded, particularly useful for feature-rich websites. There should not be too many CSS files, more for maintenance reasons than performance, and so concatenate general style sheets (‘layout’ and ‘content’ in our example) into one file. The additional CSS files (‘module x’ and ‘module y’ here) will be loaded depending on the bookContext (e.g. page and features).
+        </p>
+        </div>
+        
+</body>
+</html>

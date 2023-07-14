@@ -1,0 +1,9 @@
+requests
+cssutils
+platform
+logging
+sys
+urllib.request
+urlopen
+bs4
+BeautifulSoup

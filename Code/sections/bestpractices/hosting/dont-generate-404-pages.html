@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>dont-generate-404-pages</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Hosting</span>
+            <h2>dont-generate-404-pages</h2>
+        </p>
+        <p class="sub-para">
+            The 404 page should be as light as possible, or ideally nonexistent. When the browser requests a resource which does not exist (image, CSS style sheet, JavaScript file, etc.), the server replies with the 404 page, which is sometimes larger than the resource requested.
+Moreover, some CMS run their content research process (in the database) in an attempt to retrieve the requested page. This results in the server code being run, the server’s database accessed and the HTML page being dynamically generated. All these processes waste CPU power, RAM and bandwidth.
+<br><br>
+Avoid dynamic 404 pages, which are personalized according to the URL’s content. Instead, use a single, static 404 page.
+        </p>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>avoid-redirections</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Hosting</span>
+            <h2>avoid-redirections</h2>
+        </p>
+        <p class="sub-para">
+            Redirections should be avoided as much as possible as they slow down response and drain resources unnecessarily. These redirections can take place on various levels: HTML code, JavaScript code, HTTP server and application server (e.g. PHP).
+<br><br>
+At the HTTP server level (Apache in this case), a redirection involves systematically rewriting the URLs via the .htaccessfile:
+.htaccess :
+<br> <br>
+<IfModule mod_alias.c>
+Permanent redirection http://old_address.fr http://new.address.fr/
+</IfModule> <br>
+It would be better to manually replace the web pages’ static addresses.
+        </p>
+        </div>
+        
+</body>
+</html>

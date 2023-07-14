@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>use-plain-text-instead-of-html</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Use-plain-text-instead-of-html</h2>
+        </p>
+        <p class="sub-para">When a notification, alert or confirmation message must be sent by email to the user, use plain text instead of HTML whenever possible.
+            <br><br>
+            A confirmation email confirming a request to be contacted does not justify HTML code and images.<br>
+            A basic HTML message uses on average:<br>
+            - at least 2 images (the logo and signature at the bototm), approximately 10 KB <br>
+            - 12 KB of HTML for the layout (inline styles, tables, etc.) <br>
+            - 4 KB of text (the message + 2 action links)
+            <br><br>
+            The result:<br>
+            - HTML email = 26 KB - Plain text email = 4 KB
+            <br><br>
+            A saving of 22 KB for each email sent.<br>
+            The potential saving for an e-commerce website with both customer and internal alerts could therefore be enormous.<br>
+          </p>
+        </div>
+        
+</body>
+</html>

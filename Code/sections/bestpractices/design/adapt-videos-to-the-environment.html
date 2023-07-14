@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>adapt-videos-to-the-environment</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Adapt-videos-to-the-environment</h2>
+        </p>
+        <p class="sub-para">Consider several formats (size, frame rate, audio compression, etc.) depending on the bookContext in which the videos will be watched (desktop computer, WiFi tablet, EDGE smartphone, etc.).
+            <br>
+            Videos should be optimized outside of the website, ideally during post production. If that is not possible, use services like YouTube or Vimeo which offer, as standard, several optimized formats (SD, HD, etc.).
+            <br><br>
+            A 15-second user guide filmed in 1,680 x 1,050 is:<br>
+            - 49 MB when not optimized - 3 MB when optimized for a resolution equal to or bigger than 1,024 x 720 in MPEG4/H.264/AAC - 1.2 MB when optimized for a resolution equal to or bigger than 480 x 320 in MPEG4/H.264/AAC
+            <br><br>
+            You can thus expect the video’s mobile version to be at least 50% smaller than the desktop version (and even smaller after decoding, as the encoding format takes into account the target hardware).
+            <br>With three different sizes and three different encoding formats, there are 9 versions of the same video, covering the vast majority of situations. As with responsive design, it is possible to serve a specific video depending on simple rules such as screen resolution.
+        </p>
+        </div>
+        
+</body>
+</html>

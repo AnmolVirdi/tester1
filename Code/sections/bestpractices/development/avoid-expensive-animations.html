@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>avoid-expensive-animations</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Development</span>
+            <h2>Avoid-Expensive-Animations</h2>
+        </p>
+        <p class="sub-para">
+            avaScript/CSS animations can be very expensive in terms of CPU power and RAM usage. They all trigger actions such as (re)paint/(re)flow that consume a lot of resources. Thus avoid using animations as much as possible, and only do so when absolutely necessary.
+If you must include an animation, only employ the opacity and transform CSS3 properties as well as the related functions: translate, rotate, scale and transform. These two properties are automatically optimized by the browser, and the animation can be handled by the GPU. lists the DOM-related actions triggered by an animation.
+You can help the browser minimize the resources consumed by using will-change to warn it that an amination will take place.
+<br> <br>
+The will-change property warns the browser that an animation, which it is capable of optimizing, will be triggered. Used intelligently, this approach will consume less resources.
+        </p>
+        </div>
+        
+</body>
+</html>

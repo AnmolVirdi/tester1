@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>allow-quick-navigation-through-history</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Allow-quick-navigation-through-history</h2>
+        </p>
+        <p class="sub-para">Browsers allow users to quickly navigate between pages in their history (Back and Forward buttons). This features avoids the need to request and download the page from the server for a second time. This prevents consuming unnecessary bandwidth and generating additional HTTP requests.
+            <br>It is therefore recommended to not implement elements that render the page unoperational after leaving it.
+            <br><br>
+            Avoid:
+            <br><br>
+            - Form buttons that are disabled after submission<br>
+            - Menus that stop working after one click<br>
+            - JavaScript effects that hide page content upon leaving the page<br>
+          </p>
+        </div>
+        
+</body>
+</html>

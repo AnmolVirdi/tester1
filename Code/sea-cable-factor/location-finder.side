@@ -1,0 +1,99 @@
+{
+  "id": "ca9aba41-7fcf-4959-b0fe-03ab4e815ef8",
+  "version": "2.0",
+  "name": "location-finder",
+  "url": "https://www.site24x7.com",
+  "tests": [{
+    "id": "d6d362ba-53c4-4052-a50b-941f0c6364c2",
+    "name": "Locater",
+    "commands": [{
+      "id": "3fd85d50-612a-4e5c-a70c-fbbca912d31f",
+      "comment": "",
+      "command": "open",
+      "target": "/tools/find-website-location.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b9fa47d-8d21-4db6-823d-a945e9f1d908",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ea2217a-2774-4da4-a8c8-fed88893dcd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=hostName",
+      "targets": [
+        ["id=hostName", "id"],
+        ["name=hostName", "name"],
+        ["css=#hostName", "css:finder"],
+        ["xpath=//input[@id='hostName']", "xpath:attributes"],
+        ["xpath=//section[@id='id_request_div']/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dd4ec4f-757c-402e-8994-d3071d00ee37",
+      "comment": "",
+      "command": "type",
+      "target": "id=hostName",
+      "targets": [
+        ["id=hostName", "id"],
+        ["name=hostName", "name"],
+        ["css=#hostName", "css:finder"],
+        ["xpath=//input[@id='hostName']", "xpath:attributes"],
+        ["xpath=//section[@id='id_request_div']/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "elbruspharma.com"
+    }, {
+      "id": "11a381b8-2c5f-4c49-83ce-ab009086fdd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=cmdbtn",
+      "targets": [
+        ["id=cmdbtn", "id"],
+        ["css=#cmdbtn", "css:finder"],
+        ["xpath=//button[@id='cmdbtn']", "xpath:attributes"],
+        ["xpath=//section[@id='id_request_div']/div/div/div/div[2]/form/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Find Location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f02252d3-cfb3-4958-9627-aff05e8145a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) > .col-sm:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(3) > .col-sm:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='id_domain_result_div']/div[2]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fab4028-5d3c-4e26-ac75-212a16cb5013",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) > .col-sm:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(3) > .col-sm:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='id_domain_result_div']/div[2]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b932508b-5fc7-49aa-a234-abf33149a4be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6d362ba-53c4-4052-a50b-941f0c6364c2"]
+  }],
+  "urls": ["https://www.site24x7.com/"],
+  "plugins": []
+}

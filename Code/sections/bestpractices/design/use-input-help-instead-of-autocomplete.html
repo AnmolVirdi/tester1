@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>use-input-help-instead-of-autocomplete</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Best Practice</h1>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav>
+          <ul>
+            <li> <a href="../../best_practices.htm">back</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
+      <div class="section-one about" >
+       
+        <p class="header about-heading">
+            <span style="color: #6AB58F;">Design</span>
+            <h2>Use-input-help-instead-of-autocomplete</h2>
+        </p>
+        <p class="sub-para">Autocomplete helps users by automatically completing text entered in a field. This feature can be very useful for avoiding errors or providing suggested searches, but it requires constant communication between the browser and the server (although the exchanges may be capped). The browser sends each new character or word entered to the server, which sends back the text to complete the user’s entry. While the volume of data may be very small, it is very demanding on the servers and network in terms of requests.<br>
+            When possible, you should avoid this feature and replace it with input help. This involves guiding the user through a series of information points and hints (e.g. example of the required format in grey in the entry field, error message from the interface or help with incorrect entries). These interactions are managed locally, thus reducing exchanges with the server.
+            <br><br>
+            Potential saving: each time input help is used instead of autocompletion, the number of corresponding requests is reduced ten-fold.<br>
+          </p>
+        </div>
+        
+</body>
+</html>
